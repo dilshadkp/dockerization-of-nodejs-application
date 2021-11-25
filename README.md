@@ -121,7 +121,7 @@ CONTAINER ID   IMAGE        COMMAND               CREATED          STATUS       
 902678a89926   nodeapp:v1   "node mynodeapp.js"   15 seconds ago   Up 5 seconds   0.0.0.0:80->8080/tcp   demo
 ```
 
-## Sample Screenshot
+## Sample Screenshot of the application
 ![](https://i.ibb.co/0VYwbS1/site.png)
 
 ## Behind the code

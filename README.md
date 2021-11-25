@@ -131,11 +131,11 @@ vim Dockerfile
 ```
 ```
 FROM alpine:latest   <<====================================   Pull latest version of alpine image from hub
-RUN mkdir /var/nodeapp   <<================================   Create a directory */var/nodeapp* 
-WORKDIR /var/nodeapp    <<=================================   Change working directory to */var/nodeapp*
+RUN mkdir /var/nodeapp   <<================================   Create a directory /var/nodeapp
+WORKDIR /var/nodeapp    <<=================================   Change working directory to /var/nodeapp
 COPY application/ .    <<==================================   Copy application to working directory
 RUN apk update && apk add --no-cache nodejs npm    <<======   Install required packages
-RUN npm install    <<======================================   Install dependencies specified in *package.json*
+RUN npm install    <<======================================   Install dependencies specified in package.json
 CMD ["node" , "mynodeapp.js"]    <<========================   Set default command for the image
 EXPOSE 8080    <<==========================================   Expose port 8080
 ```

@@ -126,6 +126,9 @@ CONTAINER ID   IMAGE        COMMAND               CREATED          STATUS       
 
 ## Behind the code
 
+```sh
+vim Dockerfile
+```
 ```
 FROM alpine:latest   <<====================================   Pull latest version of alpine image from hub
 RUN mkdir /var/nodeapp   <<================================   Create a directory */var/nodeapp* 
